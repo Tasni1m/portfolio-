@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Contact </title>
+    <link rel="stylesheet" href="../css/bootstrap.css">
+</head>
+
+<body>
+    <header class="bg-primary text-white py-3">
+        <div class="container d-flex align-items-center justify-content-between py-4">
+            <a href="../index.html" class="link-light">Retour à l'accueil</a>
+            <h1 class="text-center">Contact</h1>
+            <div class="flex-shrink-0"></div>
+        </div>
+    </header>
+
+    <section class="container mt-4 mb-5 text-center">
+        <h2 class="mb-3">Me contacter</h2>
+        <p>Pour toute question, assistance technique ou opportunité de collaboration, veuillez remplir le formulaire de
+            contact ci-dessous. Nous vous répondrons dans les plus brefs délais.</p>
+    </section>
+
+    <section class="container mb-5">
+        <div class="row">
+            <div class="col-md-6">
+                <form action="envoye-mail.php" method="POST">
+                    <div class="mb-3">
+                        <label for="nom" class="form-label">Nom :</label>
+                        <input type="text" class="form-control" id="nom" name="nom" placeholder="Entrez votre nom"
+                            required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="prenom" class="form-label">Prénom :</label>
+                        <input type="text" class="form-control" id="prenom" name="prenom"
+                            placeholder="Entrez votre prénom" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="email" class="form-label">Email :</label>
+                        <input type="email" class="form-control" id="email" name="email"
+                            placeholder="exemple@domaine.com" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="sujet" class="form-label">Sujet :</label>
+                        <input type="text" class="form-control" id="sujet" name="sujet" placeholder="Entrez votre sujet"
+                            required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="commentaire" class="form-label">Commentaire :</label>
+                        <textarea class="form-control" id="commentaire" name="commentaire"
+                            placeholder="Entrez votre commentaire" required rows="4"></textarea>
+                    </div>
+                    <div class="text-center">
+                        <button type="submit" class="btn btn-primary btn-lg">Envoyer</button>
+                    </div>
+                </form>
+            </div>
+
+            <div class="col-md-6">
+                <h3 class="text-center">Nous localiser :</h3><br>
+                <div class="contact-info mb-4">
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2761.9218395316144!2d6.145967676118292!3d46.21050763123617!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x478c650351dd6aab%3A0x68ba64778e0df2f7!2s46%20Rue%20Rothschild%2C%201202%20Gen%C3%A8ve%2C%20Suisse!5e0!3m2!1sfr!2sfr!4v1694602159959!5m2!1sfr!2sfr"
+                        width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+            </div>
+    </section>
+
+    <footer class="bg-dark text-white text-center py-3">
+        <div class="container">
+            <p>&copy; 2024 Association Éducation Solidaire</p>
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                class="bi bi-telephone-minus-fill" viewBox="0 0 16 16">
+                <path fill-rule="evenodd"
+                    d="M1.885.511a1.745 1.745 0 0 1 2.61.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.68.68 0 0 0 .178.643l2.457 2.457a.68.68 0 0 0 .644.178l2.189-.547a1.75 1.75 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.6 18.6 0 0 1-7.01-4.42 18.6 18.6 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877zM10 3.5a.5.5 0 0 1 .5-.5h4a.5.5 0 0 1 0 1h-4a.5.5 0 0 1-.5-.5" />
+            </svg>
+            <span>+41 789 659 36 80</span><br>
+            <span><i class="bi bi-envelope"></i> <a href="mailto:aes@gmail.com">aes@gmail.com</a></span><br>
+            <span><i class="bi bi-geo-alt"></i> 46 rue Rothschild, 1202 Genève, Suisse</span>
+        </div>
+    </footer>
+
+</body>
+
+</html>
